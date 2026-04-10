@@ -1,0 +1,39 @@
+{%- comment -%}
+  Renders a single project card.
+  Expects: include.project (one entry from _data/projects.yml)
+{%- endcomment -%}
+{%- assign p = include.project -%}
+<article class="project-card" id="{{ p.slug }}">
+  <div class="project-card__icon">
+    {%- comment -%}
+      If an icon file has been uploaded, Jekyll will still render the <img>
+      even if the file is missing at build time — so we gate on a simple
+      convention: any project whose icon_placeholder is set falls back to
+      the typographic placeholder until a real icon is dropped in.
+    {%- endcomment -%}
+    {%- if p.icon_placeholder -%}
+      <span class="project-card__icon--placeholder" aria-hidden="true">{{ p.icon_placeholder }}</span>
+    {%- else -%}
+      <img src="{{ p.icon | relative_url }}" alt="{{ p.name }} app icon">
+    {%- endif -%}
+  </div>
+  <div class="project-card__body">
+    <h2 class="project-card__name">{{ p.name }}</h2>
+    <p class="project-card__desc">{{ p.description }}</p>
+    <p class="project-card__meta">
+      <span class="project-card__platforms">{{ p.platforms }}</span>
+      {%- if p.url and p.url != "" -%}
+      <span class="project-card__sep" aria-hidden="true">·</span>
+      <a href="{{ p.url | relative_url }}" class="project-card__link">Learn more</a>
+      {%- endif -%}
+      {%- if p.external_url and p.external_url != "" -%}
+      <span class="project-card__sep" aria-hidden="true">·</span>
+      <a href="{{ p.external_url }}" class="project-card__link" data-external rel="noopener">{{ p.external_url | remove: "https://" | remove: "http://" }}</a>
+      {%- endif -%}
+      {%- if p.app_store and p.app_store != "" -%}
+      <span class="project-card__sep" aria-hidden="true">·</span>
+      <a href="{{ p.app_store }}" class="project-card__link" data-external rel="noopener">App Store</a>
+      {%- endif -%}
+    </p>
+  </div>
+</article>

@@ -1,0 +1,43 @@
+title: MC Software ltd
+tagline: Small studio. Native apps.
+description: >-
+  MC Software ltd is an independent studio building native Apple-platform
+  apps, founded by Matteo Comisso. Makers of EchoAI and My Vinyl.
+author: Matteo Comisso
+email: matteo@mcsoftware.dev
+url: "https://mcsoftware.dev"
+baseurl: ""
+
+company:
+  legal_name: MC Software ltd
+  registration: Registered in England and Wales
+  number: "16230837"
+
+social:
+  github: mcomisso
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - docs/
+  - README.md
+  - .bundle
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "echoai"
+    values:
+      project: "EchoAI"
+
+permalink: pretty

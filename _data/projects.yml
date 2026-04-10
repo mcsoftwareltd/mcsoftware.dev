@@ -1,0 +1,46 @@
+# Project list powering the home page.
+# Add a new project = append an entry here + drop images in assets/images/<slug>/.
+# `url` is the in-site marketing page (if present); `external_url` is a dedicated
+# website (e.g. myvinyls.app). `app_store` is optional and shows the ↗ badge.
+
+- slug: echoai
+  name: EchoAI
+  tagline: On-device meeting intelligence.
+  description: >-
+    Record a meeting or conversation. EchoAI transcribes in real time,
+    summarizes, pulls out action items, and lets you search across every
+    session — all on-device.
+  platforms: iOS 26+
+  icon: /assets/images/echoai/icon.png
+  icon_placeholder: "E"
+  url: /echoai/
+  app_store: ""          # TODO: paste App Store URL before publishing
+  external_url: ""
+
+- slug: weekwise
+  name: Weekwise
+  tagline: The week ahead, nothing more.
+  description: >-
+    A forward-looking weekly calendar that doubles as a todo list. Shows
+    the next seven days, syncs with iOS Calendar, surfaces the weather,
+    and suggests prep steps before your events.
+  platforms: iOS 26+
+  icon: /assets/images/weekwise/icon.png
+  icon_placeholder: "W"
+  url: /weekwise/
+  app_store: ""          # TODO
+  external_url: ""
+
+- slug: myvinyl
+  name: My Vinyl
+  tagline: Your record collection, beautifully cataloged.
+  description: >-
+    Catalog and manage your vinyl records. Backed by Discogs, with
+    collection stats, wantlist tracking, and sync across iPhone, iPad,
+    and Mac.
+  platforms: iOS, iPadOS, macOS
+  icon: /assets/images/myvinyl/icon.png
+  icon_placeholder: "V"
+  url: ""
+  app_store: ""          # TODO
+  external_url: https://myvinyls.app

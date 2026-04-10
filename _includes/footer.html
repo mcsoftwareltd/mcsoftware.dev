@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__legal">
+      &copy; {{ site.time | date: "%Y" }} {{ site.company.legal_name }}. {{ site.company.registration }}. Company no. {{ site.company.number }}.
+    </p>
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="mailto:{{ site.email }}">Contact</a>
+      <a href="https://github.com/{{ site.social.github }}" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</footer>

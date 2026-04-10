@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="page">
+  <div class="container container--narrow">
+    {%- if page.eyebrow -%}
+    <p class="eyebrow">{{ page.eyebrow }}</p>
+    {%- endif -%}
+    {%- if page.title and page.show_title != false -%}
+    <h1 class="page__title">{{ page.title }}</h1>
+    {%- endif -%}
+    {%- if page.lede -%}
+    <p class="page__lede">{{ page.lede }}</p>
+    {%- endif -%}
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>
