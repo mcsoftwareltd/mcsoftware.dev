@@ -5,16 +5,10 @@
 {%- assign p = include.project -%}
 <article class="project-card" id="{{ p.slug }}">
   <div class="project-card__icon">
-    {%- comment -%}
-      If an icon file has been uploaded, Jekyll will still render the <img>
-      even if the file is missing at build time — so we gate on a simple
-      convention: any project whose icon_placeholder is set falls back to
-      the typographic placeholder until a real icon is dropped in.
-    {%- endcomment -%}
-    {%- if p.icon_placeholder -%}
-      <span class="project-card__icon--placeholder" aria-hidden="true">{{ p.icon_placeholder }}</span>
-    {%- else -%}
+    {%- if p.show_icon and p.icon -%}
       <img src="{{ p.icon | relative_url }}" alt="{{ p.name }} app icon">
+    {%- elsif p.icon_placeholder -%}
+      <span class="project-card__icon--placeholder" aria-hidden="true">{{ p.icon_placeholder }}</span>
     {%- endif -%}
   </div>
   <div class="project-card__body">
