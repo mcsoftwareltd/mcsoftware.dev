@@ -446,6 +446,12 @@ h3 { font-size: var(--fs-h3); line-height: 1.2; }
   font-size: 0.9em;
 }
 
+.project-card__status {
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+}
+
 /* Project marketing page hero */
 .product-hero {
   text-align: center;
@@ -506,6 +512,16 @@ h3 { font-size: var(--fs-h3); line-height: 1.2; }
 .product-hero__cta:focus-visible {
   background: var(--accent);
   transform: translateY(-1px);
+}
+
+.product-hero__cta--disabled,
+.product-hero__cta--disabled:hover,
+.product-hero__cta--disabled:focus-visible {
+  background: color-mix(in srgb, var(--bg-elevated) 85%, var(--ink) 15%);
+  color: var(--ink-muted);
+  border: 1px solid var(--rule);
+  transform: none;
+  cursor: default;
 }
 
 /* Section headings inside product pages */

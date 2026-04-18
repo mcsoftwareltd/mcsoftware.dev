@@ -12,7 +12,7 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
     </div>
     <h1 class="product-hero__title">Weekwise</h1>
     <p class="product-hero__tagline">The week ahead, nothing more.</p>
-    <a class="product-hero__cta" href="#" aria-disabled="true">Download on the App Store</a>
+    <span class="product-hero__cta product-hero__cta--disabled" aria-disabled="true">Coming soon on the App Store</span>
   </div>
 </section>
 
@@ -30,12 +30,12 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
         <figcaption>This week, at a glance</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/images/weekwise/screenshot-day.png' | relative_url }}" alt="Weekwise day detail">
-        <figcaption>A single day with weather &amp; prep</figcaption>
+        <img src="{{ '/assets/images/weekwise/screenshot-add.png' | relative_url }}" alt="Weekwise quick add flow">
+        <figcaption>Add something in seconds</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/images/weekwise/screenshot-widget.png' | relative_url }}" alt="Weekwise widget on home screen">
-        <figcaption>Widget for your home screen</figcaption>
+        <img src="{{ '/assets/images/weekwise/screenshot-weather.png' | relative_url }}" alt="Weekwise weather detail sheet">
+        <figcaption>Weather, right where you need it</figcaption>
       </figure>
     </div>
   </div>

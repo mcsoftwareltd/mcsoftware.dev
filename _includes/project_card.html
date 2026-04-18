@@ -27,6 +27,9 @@
       {%- if p.app_store and p.app_store != "" -%}
       <span class="project-card__sep" aria-hidden="true">·</span>
       <a href="{{ p.app_store }}" class="project-card__link" data-external rel="noopener">App Store</a>
+      {%- elsif p.coming_soon -%}
+      <span class="project-card__sep" aria-hidden="true">·</span>
+      <span class="project-card__status">Coming soon</span>
       {%- endif -%}
     </p>
   </div>

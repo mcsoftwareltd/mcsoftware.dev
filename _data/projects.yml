@@ -45,5 +45,6 @@
   show_icon: true
   icon_placeholder: "W"
   url: /weekwise/
+  coming_soon: true
   app_store: ""          # TODO
   external_url: ""
