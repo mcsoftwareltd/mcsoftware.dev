@@ -8,7 +8,7 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
 <section class="product-hero">
   <div class="container container--narrow">
     <div class="product-hero__icon">
-      <span style="font-family: 'Instrument Serif', serif; font-size: 4.5rem; color: var(--accent);" aria-hidden="true">W</span>
+      <img src="{{ '/assets/images/weekwise/icon.png' | relative_url }}" alt="Weekwise app icon">
     </div>
     <h1 class="product-hero__title">Weekwise</h1>
     <p class="product-hero__tagline">The week ahead, nothing more.</p>
@@ -47,12 +47,12 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
     <h2 class="product-section__title">Small app, thoughtful details.</h2>
     <div class="product-section__body">
       <ul>
-        <li><strong>Two-way iOS Calendar sync</strong> — events you create in Weekwise show up in Calendar, and vice versa. No second source of truth.</li>
-        <li><strong>Weather at a glance</strong> — WeatherKit-powered forecasts for each day, so you know whether to carry a coat to Thursday's meeting.</li>
-        <li><strong>Prep chain</strong> — on-device AI suggests what to prepare before important events, based on context you've already given it.</li>
-        <li><strong>Home screen widget</strong> — your week on the home screen, no tap required.</li>
-        <li><strong>Local notifications</strong> — configurable reminders before each event.</li>
-        <li><strong>Dark mode &amp; Dynamic Type</strong> — because of course.</li>
+        <li><strong>Your real calendar, just easier to read</strong> — add or edit something in Weekwise and it stays in step with the calendar you already use everywhere else.</li>
+        <li><strong>Weather where it matters</strong> — each day includes the forecast, so you can plan for rain, sun, or a cold morning without checking another app.</li>
+        <li><strong>Helpful prep before big moments</strong> — Weekwise can suggest what to bring or do ahead of time, so important events feel less rushed.</li>
+        <li><strong>Your week on the home screen</strong> — see what is coming up without opening the app.</li>
+        <li><strong>Reminders before you need them</strong> — get nudges ahead of events, timed the way you like.</li>
+        <li><strong>Comfortable to use every day</strong> — built to feel good in dark mode and stay readable at larger text sizes.</li>
       </ul>
     </div>
   </div>
@@ -65,6 +65,7 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
     <div class="product-section__body">
       <ul>
         <li>iPhone running iOS 26 or later.</li>
+        <li>Apple Intelligence support for AI features, which means iPhone 15 Pro or newer.</li>
         <li>Access to iOS Calendar (granted the first time you open the app).</li>
         <li>Location access is optional — only used to show weather for your current area. You can pick any location manually instead.</li>
       </ul>
@@ -74,8 +75,8 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
 
 <section class="product-section">
   <div class="container container--narrow">
-    <div class="product-section__body">
-      <p style="color: var(--ink-muted); font-size: 0.9375rem;">
+    <div class="product-section__body product-section__body--subtle-links">
+      <p>
         <a href="{{ '/weekwise/privacy/' | relative_url }}">Privacy policy</a> &nbsp;·&nbsp;
         <a href="{{ '/weekwise/terms/' | relative_url }}">Terms of service</a> &nbsp;·&nbsp;
         <a href="mailto:matteo@mcsoftware.dev">Support</a>

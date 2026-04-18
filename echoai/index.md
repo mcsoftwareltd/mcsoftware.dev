@@ -8,7 +8,7 @@ description: Record, transcribe, summarize, and search conversations. Everything
 <section class="product-hero">
   <div class="container container--narrow">
     <div class="product-hero__icon">
-      <span style="font-family: 'Instrument Serif', serif; font-size: 4.5rem; color: var(--accent);" aria-hidden="true">E</span>
+      <img src="{{ '/assets/images/echoai/icon.jpg' | relative_url }}" alt="EchoAI app icon">
     </div>
     <h1 class="product-hero__title">EchoAI</h1>
     <p class="product-hero__tagline">On-device meeting intelligence.</p>
@@ -27,16 +27,16 @@ description: Record, transcribe, summarize, and search conversations. Everything
     </div>
     <div class="screenshots">
       <figure>
-        <img src="{{ '/assets/images/echoai/screenshot-recording.png' | relative_url }}" alt="EchoAI recording screen">
-        <figcaption>Real-time transcription</figcaption>
+        <img src="{{ '/assets/images/echoai/screenshot-home.png' | relative_url }}" alt="EchoAI home screen with recent sessions">
+        <figcaption>Start recording in one tap</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/images/echoai/screenshot-session.png' | relative_url }}" alt="EchoAI session detail with summary and action items">
-        <figcaption>Summary &amp; action items</figcaption>
+        <img src="{{ '/assets/images/echoai/screenshot-recording.png' | relative_url }}" alt="EchoAI recording screen with live transcript">
+        <figcaption>Live transcript while you speak</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/images/echoai/screenshot-search.png' | relative_url }}" alt="EchoAI search across all sessions">
-        <figcaption>Search every session</figcaption>
+        <img src="{{ '/assets/images/echoai/screenshot-settings.png' | relative_url }}" alt="EchoAI settings screen">
+        <figcaption>Simple controls, tuned to your setup</figcaption>
       </figure>
     </div>
   </div>

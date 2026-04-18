@@ -42,6 +42,7 @@
     and suggests prep steps before your events.
   platforms: iOS 26+
   icon: /assets/images/weekwise/icon.png
+  show_icon: true
   icon_placeholder: "W"
   url: /weekwise/
   app_store: ""          # TODO
