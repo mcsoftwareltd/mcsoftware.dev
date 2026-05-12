@@ -11,8 +11,10 @@ layout: default
     <div class="prose legal__prose">
       {{ content }}
     </div>
+    {%- if page.project_url -%}
     <p class="legal__back">
       <a href="{{ page.project_url | relative_url }}">&larr; Back to {{ page.project }}</a>
     </p>
+    {%- endif -%}
   </div>
 </article>
