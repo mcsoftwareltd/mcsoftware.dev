@@ -18,6 +18,21 @@
   app_store: ""          # TODO
   external_url: https://myvinyls.app
 
+- slug: ridenav
+  name: RideNav
+  tagline: Motorcycle navigation built around the ride.
+  description: >-
+    Plan twisty motorcycle routes, record every ride, and keep the
+    whole group together with live location sharing and on-route chat.
+    Available on iPhone and Android, with a web planner.
+  platforms: iOS, Android
+  icon: /assets/images/ridenav/icon.png
+  show_icon: true
+  icon_placeholder: "R"
+  url: /ridenav/
+  app_store: ""          # TODO: paste App Store URL when published
+  external_url: ""
+
 - slug: echoai
   name: EchoAI
   tagline: On-device meeting intelligence.
