@@ -1,6 +1,6 @@
 ---
 layout: legal
-permalink: /farmacocalendar/privacy/
+permalink: /farmacocalendar/privacy.html
 title: Informativa sulla Privacy
 project: FarmacoCalendar
 kind: Privacy
