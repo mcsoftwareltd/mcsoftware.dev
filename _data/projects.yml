@@ -33,6 +33,21 @@
   app_store: ""          # TODO: paste App Store URL when published
   external_url: ""
 
+- slug: mapink
+  name: MapInk
+  tagline: Draw and plan on real maps.
+  description: >-
+    Mark up Apple Maps with Pencil notes, pins, freehand distance
+    sketches, and drive or walk routes through the places you save.
+    Built for iPad map planning.
+  platforms: iPadOS
+  icon: /assets/images/mapink/icon.png
+  show_icon: true
+  icon_placeholder: "M"
+  url: /mapink/
+  app_store: https://apps.apple.com/app/apple-store/id6768144274
+  external_url: ""
+
 - slug: echoai
   name: EchoAI
   tagline: On-device meeting intelligence.
