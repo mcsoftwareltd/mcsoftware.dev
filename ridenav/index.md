@@ -12,8 +12,7 @@ description: Plan twisty motorcycle routes, record every ride, and keep the whol
     </div>
     <h1 class="product-hero__title">RideNav</h1>
     <p class="product-hero__tagline">Motorcycle navigation built around the ride.</p>
-    <!-- Replace href with the App Store URL once published -->
-    <a class="product-hero__cta" href="https://play.google.com/store/apps/details?id=com.mcsoftware.ridenav" target="_blank" rel="noopener">Get it on Google Play</a>
+    {% include product_downloads.html slug="ridenav" %}
   </div>
 </section>
 

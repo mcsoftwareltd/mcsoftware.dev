@@ -12,7 +12,7 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
     </div>
     <h1 class="product-hero__title">Weekwise</h1>
     <p class="product-hero__tagline">The week ahead, nothing more.</p>
-    <span class="product-hero__cta product-hero__cta--disabled" aria-disabled="true">Coming soon on the App Store</span>
+    {% include product_downloads.html slug="weekwise" %}
   </div>
 </section>
 

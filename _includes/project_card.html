@@ -27,7 +27,16 @@
       {%- if p.app_store and p.app_store != "" -%}
       <span class="project-card__sep" aria-hidden="true">·</span>
       <a href="{{ p.app_store }}" class="project-card__link" data-external rel="noopener">App Store</a>
-      {%- elsif p.coming_soon -%}
+      {%- endif -%}
+      {%- if p.google_play and p.google_play != "" -%}
+      <span class="project-card__sep" aria-hidden="true">·</span>
+      <a href="{{ p.google_play }}" class="project-card__link" data-external rel="noopener">Google Play</a>
+      {%- endif -%}
+      {%- if p.testflight and p.testflight != "" -%}
+      <span class="project-card__sep" aria-hidden="true">·</span>
+      <a href="{{ p.testflight }}" class="project-card__link" data-external rel="noopener">Join iOS beta</a>
+      {%- endif -%}
+      {%- if p.coming_soon and p.app_store == blank and p.google_play == blank and p.testflight == blank -%}
       <span class="project-card__sep" aria-hidden="true">·</span>
       <span class="project-card__status">Coming soon</span>
       {%- endif -%}

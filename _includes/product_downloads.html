@@ -1,0 +1,10 @@
+{%- assign project = site.data.projects | where: "slug", include.slug | first -%}
+{%- if project.app_store and project.app_store != "" -%}
+<a class="product-hero__cta" href="{{ project.app_store }}" rel="noopener">Download on the App Store</a>
+{%- endif -%}
+{%- if project.testflight and project.testflight != "" -%}
+<a class="product-hero__cta" href="{{ project.testflight }}" rel="noopener">Join the iOS beta on TestFlight</a>
+{%- endif -%}
+{%- if project.google_play and project.google_play != "" -%}
+<a class="product-hero__cta" href="{{ project.google_play }}" rel="noopener">Get it on Google Play</a>
+{%- endif -%}

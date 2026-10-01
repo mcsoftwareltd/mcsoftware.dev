@@ -1,7 +1,8 @@
 # Project list powering the home page.
 # Add a new project = append an entry here + drop images in assets/images/<slug>/.
 # `url` is the in-site marketing page (if present); `external_url` is a dedicated
-# website (e.g. myvinyls.app). `app_store` is optional and shows the ↗ badge.
+# website (e.g. myvinyls.app). `app_store`, `google_play`, and `testflight`
+# are optional download links shared by the home page and product pages.
 
 - slug: myvinyl
   name: My Vinyl
@@ -10,12 +11,13 @@
     Catalog and manage your vinyl records. Backed by Discogs, with
     collection stats, wantlist tracking, and sync across iPhone, iPad,
     and Mac.
-  platforms: iOS, iPadOS, macOS
+  platforms: iOS, iPadOS, macOS, Android
   icon: /assets/images/myvinyl/icon.jpg
   show_icon: true
   icon_placeholder: "V"
   url: ""
-  app_store: ""          # TODO
+  app_store: https://apps.apple.com/app/id1547173908
+  google_play: https://play.google.com/store/apps/details?id=com.mcsoftware.myvinyl
   external_url: https://myvinyls.app
 
 - slug: ridenav
@@ -30,7 +32,8 @@
   show_icon: true
   icon_placeholder: "R"
   url: /ridenav/
-  app_store: ""          # TODO: paste App Store URL when published
+  app_store: ""
+  testflight: https://testflight.apple.com/join/FfBfDhhB
   external_url: ""
 
 - slug: mapink
@@ -60,7 +63,7 @@
   show_icon: true
   icon_placeholder: "E"
   url: /echoai/
-  app_store: ""          # TODO: paste App Store URL before publishing
+  app_store: https://apps.apple.com/app/id6761034332
   external_url: ""
 
 - slug: weekwise
@@ -75,6 +78,5 @@
   show_icon: true
   icon_placeholder: "W"
   url: /weekwise/
-  coming_soon: true
-  app_store: ""          # TODO
+  app_store: https://apps.apple.com/app/id6759658981
   external_url: ""

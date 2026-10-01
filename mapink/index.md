@@ -12,7 +12,7 @@ description: Mark up Apple Maps on iPad with Pencil notes, pins, distance sketch
     </div>
     <h1 class="product-hero__title">MapInk</h1>
     <p class="product-hero__tagline">Draw and plan on real maps.</p>
-    <a class="product-hero__cta" href="https://apps.apple.com/app/apple-store/id6768144274" rel="noopener">View on the App Store</a>
+    {% include product_downloads.html slug="mapink" %}
   </div>
 </section>
 

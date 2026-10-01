@@ -12,8 +12,7 @@ description: Record, transcribe, summarize, and search conversations. Everything
     </div>
     <h1 class="product-hero__title">EchoAI</h1>
     <p class="product-hero__tagline">On-device meeting intelligence.</p>
-    <!-- Replace href with the App Store URL before publishing -->
-    <a class="product-hero__cta" href="#" aria-disabled="true">Download on the App Store</a>
+    {% include product_downloads.html slug="echoai" %}
   </div>
 </section>
 
