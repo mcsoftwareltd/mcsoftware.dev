@@ -1,0 +1,43 @@
+{%- comment -%}
+  Gallery contract: include.slug matches store_media; context makes rail IDs unique on a page.
+  No screenshots means no gallery. Image links work without JavaScript.
+{%- endcomment -%}
+{%- assign media = site.data.store_media[include.slug] -%}
+{%- assign gallery_project = site.data.projects | where: 'slug', include.slug | first -%}
+{%- assign gallery_id = include.context | default: 'home' | append: '-' | append: include.slug -%}
+{%- if media.screenshots.size > 0 -%}
+<section class="store-gallery" data-gallery data-app="{{ include.slug }}" data-apple-source="{{ media.source_url | escape }}" data-android-source="{{ media.android_source_url | escape }}" aria-label="{{ gallery_project.name | escape }} screenshots">
+  <div class="store-gallery__toolbar">
+    {%- if media.android_screenshots.size > 0 -%}
+    <div class="store-gallery__platforms" role="group" aria-label="Screenshot platform" data-gallery-controls hidden>
+      <button class="platform-option is-active" type="button" data-platform="apple" aria-pressed="true" aria-controls="{{ gallery_id }}-apple">{{ media.platform }}</button>
+      <button class="platform-option" type="button" data-platform="android" aria-pressed="false" aria-controls="{{ gallery_id }}-android">Android</button>
+    </div>
+    {%- else -%}
+    <span class="gallery-platform">{{ media.platform }}</span>
+    {%- endif -%}
+    <div class="store-gallery__navigation" data-gallery-controls hidden>
+      <span class="gallery-count" aria-live="polite" aria-atomic="true">1 / {{ media.screenshots.size }}</span>
+      <button type="button" class="gallery-arrow" data-gallery-step="-1" aria-label="Previous {{ gallery_project.name | escape }} screenshot" disabled><span aria-hidden="true">←</span></button>
+      <button type="button" class="gallery-arrow" data-gallery-step="1" aria-label="Next {{ gallery_project.name | escape }} screenshot"><span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+  <div class="store-gallery__rail" id="{{ gallery_id }}-apple" data-rail="apple" tabindex="0" aria-label="{{ gallery_project.name | escape }} {{ media.platform }} previews. Swipe or use the arrow buttons.">
+    {%- for shot in media.screenshots -%}
+    <a class="store-shot" href="{{ shot.src | relative_url }}" data-lightbox aria-label="Enlarge {{ gallery_project.name | escape }} screenshot {{ forloop.index }}">
+      <img src="{{ shot.src | relative_url }}" width="{{ shot.width }}" height="{{ shot.height }}" alt="{{ shot.alt | escape }}" loading="lazy" decoding="async" draggable="false">
+    </a>
+    {%- endfor -%}
+  </div>
+  {%- if media.android_screenshots.size > 0 -%}
+  <div class="store-gallery__rail" id="{{ gallery_id }}-android" data-rail="android" tabindex="0" hidden aria-label="{{ gallery_project.name | escape }} Android previews. Swipe or use the arrow buttons.">
+    {%- for shot in media.android_screenshots -%}
+    <a class="store-shot" href="{{ shot.src | relative_url }}" data-lightbox aria-label="Enlarge {{ gallery_project.name | escape }} Android screenshot {{ forloop.index }}">
+      <img src="{{ shot.src | relative_url }}" width="{{ shot.width }}" height="{{ shot.height }}" alt="{{ shot.alt | escape }}" loading="lazy" decoding="async" draggable="false">
+    </a>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+  <p class="store-gallery__source"><a href="{{ media.source_url | escape }}" rel="noopener">View on the App Store <span aria-hidden="true">↗</span></a></p>
+</section>
+{%- endif -%}

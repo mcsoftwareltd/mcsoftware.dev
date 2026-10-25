@@ -1,5 +1,6 @@
 ---
 layout: default
+store_gallery: true
 permalink: /echoai/
 title: EchoAI — On-device meeting intelligence
 description: Record, transcribe, summarize, and search conversations. Everything runs on your iPhone — no servers, no accounts, no tracking.
@@ -16,6 +17,10 @@ description: Record, transcribe, summarize, and search conversations. Everything
   </div>
 </section>
 
+<section class="product-store-previews container" aria-label="App previews">
+  {% include app_screenshots.html slug="echoai" context="product" %}
+</section>
+
 <section class="product-section">
   <div class="container container--narrow">
     <p class="product-section__label">What it does</p>
@@ -23,20 +28,6 @@ description: Record, transcribe, summarize, and search conversations. Everything
     <div class="product-section__body">
       <p>Start a recording before a meeting, a lecture, or a conversation. EchoAI transcribes it in real time, keeping up with multiple speakers and noisy rooms. When you stop, it writes a concise summary, pulls out action items, and files everything into your session library.</p>
       <p>Every session is searchable. Ask EchoAI a question — <em>"What did we decide about the launch date?"</em> — and it finds the answer across all your recordings using on-device semantic search.</p>
-    </div>
-    <div class="screenshots">
-      <figure>
-        <img src="{{ '/assets/images/echoai/screenshot-home.png' | relative_url }}" alt="EchoAI home screen with recent sessions">
-        <figcaption>Start recording in one tap</figcaption>
-      </figure>
-      <figure>
-        <img src="{{ '/assets/images/echoai/screenshot-recording.png' | relative_url }}" alt="EchoAI recording screen with live transcript">
-        <figcaption>Live transcript while you speak</figcaption>
-      </figure>
-      <figure>
-        <img src="{{ '/assets/images/echoai/screenshot-settings.png' | relative_url }}" alt="EchoAI settings screen">
-        <figcaption>Simple controls, tuned to your setup</figcaption>
-      </figure>
     </div>
   </div>
 </section>

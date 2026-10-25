@@ -12,5 +12,9 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
+  {% if page.store_gallery %}
+  <link rel="stylesheet" href="{{ '/assets/css/app-galleries.css' | relative_url }}">
+  {% endif %}
+
   {% seo %}
 </head>

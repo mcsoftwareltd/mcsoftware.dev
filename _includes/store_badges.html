@@ -1,0 +1,16 @@
+{%- assign download = include.project -%}
+<div class="store-downloads" aria-label="Download {{ download.name | escape }}">
+  {%- if download.app_store and download.app_store != "" -%}
+  <a class="store-badge store-badge--apple" href="{{ download.app_store }}" rel="noopener" aria-label="Download {{ download.name | escape }} on the App Store">
+    <img src="{{ '/assets/store/badges/app-store.svg' | relative_url }}" width="148" height="50" alt="Download on the App Store">
+  </a>
+  {%- endif -%}
+  {%- if download.google_play and download.google_play != "" -%}
+  <a class="store-badge store-badge--google" href="{{ download.google_play }}" rel="noopener" aria-label="Get {{ download.name | escape }} on Google Play">
+    <img src="{{ '/assets/store/badges/google-play.png' | relative_url }}" width="172" height="67" alt="Get it on Google Play">
+  </a>
+  {%- endif -%}
+  {%- if download.testflight and download.testflight != "" -%}
+  <a class="beta-download" href="{{ download.testflight }}" rel="noopener">Join the iOS beta <span aria-hidden="true">↗</span></a>
+  {%- endif -%}
+</div>

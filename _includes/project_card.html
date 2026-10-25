@@ -1,45 +1,34 @@
-{%- comment -%}
-  Renders a single project card.
-  Expects: include.project (one entry from _data/projects.yml)
-{%- endcomment -%}
+{%- comment -%}App details with official download badges and verified store screenshots.{%- endcomment -%}
 {%- assign p = include.project -%}
 <article class="project-card" id="{{ p.slug }}">
-  <div class="project-card__icon">
-    {%- if p.show_icon and p.icon -%}
-      <img src="{{ p.icon | relative_url }}" alt="{{ p.name }} app icon">
-    {%- elsif p.icon_placeholder -%}
-      <span class="project-card__icon--placeholder" aria-hidden="true">{{ p.icon_placeholder }}</span>
-    {%- endif -%}
-  </div>
-  <div class="project-card__body">
-    <h2 class="project-card__name">{{ p.name }}</h2>
+  <div class="project-card__intro">
+    <div class="project-card__identity">
+      <div class="project-card__icon">
+        {%- if p.show_icon and p.icon -%}
+        <img src="{{ p.icon | relative_url }}" alt="{{ p.name }} app icon" width="96" height="96">
+        {%- elsif p.icon_placeholder -%}
+        <span class="project-card__icon--placeholder" aria-hidden="true">{{ p.icon_placeholder }}</span>
+        {%- endif -%}
+      </div>
+      <div>
+        <p class="project-card__platforms">{{ p.platforms }}</p>
+        <h2 class="project-card__name">{{ p.name }}</h2>
+      </div>
+    </div>
+    <p class="project-card__tagline">{{ p.tagline }}</p>
     <p class="project-card__desc">{{ p.description }}</p>
-    <p class="project-card__meta">
-      <span class="project-card__platforms">{{ p.platforms }}</span>
+    {% include store_badges.html project=p %}
+    <div class="project-card__meta">
       {%- if p.url and p.url != "" -%}
-      <span class="project-card__sep" aria-hidden="true">·</span>
-      <a href="{{ p.url | relative_url }}" class="project-card__link">Learn more</a>
+      <a href="{{ p.url | relative_url }}" class="project-card__link">Explore {{ p.name }} <span aria-hidden="true">↗</span></a>
       {%- endif -%}
       {%- if p.external_url and p.external_url != "" -%}
-      <span class="project-card__sep" aria-hidden="true">·</span>
-      <a href="{{ p.external_url }}" class="project-card__link" data-external rel="noopener">{{ p.external_url | remove: "https://" | remove: "http://" }}</a>
+      <a href="{{ p.external_url }}" class="project-card__link" rel="noopener">{{ p.external_url | remove: 'https://' }} <span aria-hidden="true">↗</span></a>
       {%- endif -%}
-      {%- if p.app_store and p.app_store != "" -%}
-      <span class="project-card__sep" aria-hidden="true">·</span>
-      <a href="{{ p.app_store }}" class="project-card__link" data-external rel="noopener">App Store</a>
-      {%- endif -%}
-      {%- if p.google_play and p.google_play != "" -%}
-      <span class="project-card__sep" aria-hidden="true">·</span>
-      <a href="{{ p.google_play }}" class="project-card__link" data-external rel="noopener">Google Play</a>
-      {%- endif -%}
-      {%- if p.testflight and p.testflight != "" -%}
-      <span class="project-card__sep" aria-hidden="true">·</span>
-      <a href="{{ p.testflight }}" class="project-card__link" data-external rel="noopener">Join iOS beta</a>
-      {%- endif -%}
-      {%- if p.coming_soon and p.app_store == blank and p.google_play == blank and p.testflight == blank -%}
-      <span class="project-card__sep" aria-hidden="true">·</span>
-      <span class="project-card__status">Coming soon</span>
-      {%- endif -%}
-    </p>
+    </div>
   </div>
+  {%- assign project_media = site.data.store_media[p.slug] -%}
+  {%- if project_media.screenshots.size > 0 -%}
+  <div class="project-card__previews">{% include app_screenshots.html slug=p.slug context="home" %}</div>
+  {%- endif -%}
 </article>

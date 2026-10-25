@@ -1,0 +1,219 @@
+{
+  "myvinyl": {
+    "platform": "iPhone",
+    "screenshots": [
+      {
+        "src": "/assets/store/myvinyl/01.webp",
+        "width": 507,
+        "height": 1100,
+        "alt": "My Vinyl App Store preview 1",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/2f/1d/2e2f1d89-f8dd-33b6-34e6-c6781d45259b/01.png/1260x2736bb.png",
+        "source_width": 1260,
+        "source_height": 2736
+      },
+      {
+        "src": "/assets/store/myvinyl/02.webp",
+        "width": 507,
+        "height": 1100,
+        "alt": "My Vinyl App Store preview 2",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/52/ef/9e/52ef9ef0-04dc-3303-9f5b-5fa927b312a0/02.png/1260x2736bb.png",
+        "source_width": 1260,
+        "source_height": 2736
+      },
+      {
+        "src": "/assets/store/myvinyl/03.webp",
+        "width": 507,
+        "height": 1100,
+        "alt": "My Vinyl App Store preview 3",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/58/69/745869bf-3788-8e6f-ad87-a51f32267b72/03.png/1260x2736bb.png",
+        "source_width": 1260,
+        "source_height": 2736
+      },
+      {
+        "src": "/assets/store/myvinyl/04.webp",
+        "width": 507,
+        "height": 1100,
+        "alt": "My Vinyl App Store preview 4",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/52/1b/b8/521bb8df-5e7f-dd14-3320-a2b5f6be4e9b/04.png/1260x2736bb.png",
+        "source_width": 1260,
+        "source_height": 2736
+      },
+      {
+        "src": "/assets/store/myvinyl/05.webp",
+        "width": 507,
+        "height": 1100,
+        "alt": "My Vinyl App Store preview 5",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/ee/f4/45eef46c-48df-63a5-6bea-1a2a48f1ceb3/05.png/1260x2736bb.png",
+        "source_width": 1260,
+        "source_height": 2736
+      }
+    ],
+    "source_url": "https://apps.apple.com/gb/app/my-vinyl-scanner-for-discogs/id1547173908",
+    "store_title": "My Vinyl+ Scanner for Discogs",
+    "developer": "MC Software Ltd",
+    "android_screenshots": [
+      {
+        "src": "/assets/store/myvinyl/android/01.webp",
+        "width": 619,
+        "height": 1100,
+        "alt": "My Vinyl Google Play preview 1",
+        "source_url": "https://play-lh.googleusercontent.com/gJ48NFa60nM2WcF2tke-j_WnXk0S9wcFFYbWpNKosHaEBjoyPoy7_igIJrl1F5jckb2-elpW_Ov9D4rpNgEJ=s0",
+        "source_width": 1080,
+        "source_height": 1920
+      },
+      {
+        "src": "/assets/store/myvinyl/android/02.webp",
+        "width": 619,
+        "height": 1100,
+        "alt": "My Vinyl Google Play preview 2",
+        "source_url": "https://play-lh.googleusercontent.com/w3AyqO98e4XOZ6J_tVEGgd5qGnXgcOzDLu4a9SszUd1N8cJmBPD7WWMAD6JUz47IRHbzLq_iK6IJbo_E4wZ1yA=s0",
+        "source_width": 1080,
+        "source_height": 1920
+      },
+      {
+        "src": "/assets/store/myvinyl/android/03.webp",
+        "width": 619,
+        "height": 1100,
+        "alt": "My Vinyl Google Play preview 3",
+        "source_url": "https://play-lh.googleusercontent.com/_JK-y9Kukxz0Icud2lKLWBjCV0F5D2igCDBU1laXOfptJ6a995CqgBHLwMqBSdxWlrj_uP6OueA09CpAGk5Hfg=s0",
+        "source_width": 1080,
+        "source_height": 1920
+      }
+    ],
+    "android_source_url": "https://play.google.com/store/apps/details?id=com.mcsoftware.myvinyl&hl=en_GB&gl=GB"
+  },
+  "mapink": {
+    "platform": "iPad",
+    "screenshots": [
+      {
+        "src": "/assets/store/mapink/01.webp",
+        "width": 825,
+        "height": 1100,
+        "alt": "MapInk App Store preview 1",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/65/8a/3b/658a3b71-7b3d-d430-f1f9-5fb063dacc3b/01_sketch.png/2064x2752bb.png",
+        "source_width": 2064,
+        "source_height": 2752
+      },
+      {
+        "src": "/assets/store/mapink/02.webp",
+        "width": 825,
+        "height": 1100,
+        "alt": "MapInk App Store preview 2",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/85/c8/0c/85c80c33-d2e8-81f0-847a-777dd6fbc7d5/02_journey.png/2064x2752bb.png",
+        "source_width": 2064,
+        "source_height": 2752
+      },
+      {
+        "src": "/assets/store/mapink/03.webp",
+        "width": 825,
+        "height": 1100,
+        "alt": "MapInk App Store preview 3",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1a/96/b2/1a96b22a-ba33-6252-d6b1-071d8ea46b53/03_climate.png/2064x2752bb.png",
+        "source_width": 2064,
+        "source_height": 2752
+      }
+    ],
+    "source_url": "https://apps.apple.com/gb/app/mapink-map-notes/id6768144274",
+    "store_title": "MapInk: Map Notes",
+    "developer": "MC Software Ltd"
+  },
+  "echoai": {
+    "platform": "iPhone",
+    "screenshots": [
+      {
+        "src": "/assets/store/echoai/01.webp",
+        "width": 508,
+        "height": 1100,
+        "alt": "EchoAI App Store preview 1",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6c/de/37/6cde37e2-9df5-87e6-0651-001fc3218499/974E0A19-E103-46CC-A7B1-91822DCBAD9C-IMG_3347.PNG/1290x2796bb.png",
+        "source_width": 1290,
+        "source_height": 2796
+      },
+      {
+        "src": "/assets/store/echoai/02.webp",
+        "width": 508,
+        "height": 1100,
+        "alt": "EchoAI App Store preview 2",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/40/37/41/403741ff-f57f-e2b9-4359-6239e88a1ddd/B3B1F6EB-202E-4C81-B21C-BD5F2C56DC22-IMG_3348.PNG/1290x2796bb.png",
+        "source_width": 1290,
+        "source_height": 2796
+      },
+      {
+        "src": "/assets/store/echoai/03.webp",
+        "width": 508,
+        "height": 1100,
+        "alt": "EchoAI App Store preview 3",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/29/f2/e9/29f2e9af-4817-b3b2-ca8b-916650b3b152/29FA49E9-33F4-4097-BA78-6AD2370B11A5-IMG_3346.PNG/1290x2796bb.png",
+        "source_width": 1290,
+        "source_height": 2796
+      }
+    ],
+    "source_url": "https://apps.apple.com/gb/app/echoai-ai-meeting-recorder/id6761034332",
+    "store_title": "echoAI: AI Meeting Recorder",
+    "developer": "MC Software Ltd"
+  },
+  "weekwise": {
+    "platform": "iPhone",
+    "screenshots": [
+      {
+        "src": "/assets/store/weekwise/01.webp",
+        "width": 508,
+        "height": 1100,
+        "alt": "Weekwise App Store preview 1",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/93/10/d7/9310d7e1-ef68-1bd5-4592-12b93df1fdce/IMG_3469.PNG/1290x2796bb.png",
+        "source_width": 1290,
+        "source_height": 2796
+      },
+      {
+        "src": "/assets/store/weekwise/02.webp",
+        "width": 508,
+        "height": 1100,
+        "alt": "Weekwise App Store preview 2",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/92/ba/4792baa1-5986-a449-eb51-5aa9b410ee68/IMG_3468.PNG/1290x2796bb.png",
+        "source_width": 1290,
+        "source_height": 2796
+      },
+      {
+        "src": "/assets/store/weekwise/03.webp",
+        "width": 508,
+        "height": 1100,
+        "alt": "Weekwise App Store preview 3",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/ca/2c/8fca2c98-6b5a-252f-17c9-ee66e4cf25c0/IMG_3464.PNG/1290x2796bb.png",
+        "source_width": 1290,
+        "source_height": 2796
+      }
+    ],
+    "source_url": "https://apps.apple.com/gb/app/weekwise-weekly-planner/id6759658981",
+    "store_title": "Weekwise: Weekly Planner",
+    "developer": "MC Software Ltd"
+  },
+  "ridenav": {
+    "platform": "iPhone",
+    "screenshots": [],
+    "source_url": "https://testflight.apple.com/join/FfBfDhhB",
+    "availability": "unavailable",
+    "reason": "The public RideNav TestFlight invitation contains the app icon and beta invitation, but no app screenshots. No public App Store listing is linked in projects.yml."
+  },
+  "_sources": {
+    "fetched_at": "2026-10-25T06:55:41.699391+00:00",
+    "screenshots_method": "Current public GB App Store serialized product_media shelves, not the iTunes lookup API. Original composition retained; proportional downsampling to 1100px height and WebP quality 90.",
+    "badges": {
+      "app_store": {
+        "src": "/assets/store/badges/app-store.svg",
+        "source_url": "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg",
+        "guidelines_url": "https://developer.apple.com/app-store/marketing/guidelines/",
+        "format": "SVG",
+        "unmodified": true,
+        "sha256": "a26fc5b38380272c92e9019a2eb8b45542a66814b3e2b203772db8904b9fb99f"
+      },
+      "google_play": {
+        "src": "/assets/store/badges/google-play.png",
+        "source_url": "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
+        "requested_source_url": "https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png",
+        "format": "PNG",
+        "unmodified": true,
+        "sha256": "f72611e2df8e88204009fd896d05d5e8e83c77009c63943bbffa169559934849"
+      }
+    }
+  }
+}

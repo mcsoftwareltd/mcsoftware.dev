@@ -1,0 +1,15 @@
+<dialog class="screenshot-lightbox" aria-labelledby="screenshot-viewer-title">
+  <div class="screenshot-lightbox__toolbar">
+    <span id="screenshot-viewer-title">App screenshots</span>
+    <div class="screenshot-lightbox__actions">
+      <a href="#" data-viewer-original target="_blank" rel="noopener">Open image <span aria-hidden="true">↗</span></a>
+      <button type="button" data-viewer-close aria-label="Close screenshot viewer">Close <span aria-hidden="true">×</span></button>
+    </div>
+  </div>
+  <div class="screenshot-lightbox__image"><img alt=""><p data-viewer-status role="status" aria-live="polite"></p></div>
+  <div class="screenshot-lightbox__navigation">
+    <button type="button" data-viewer-step="-1" aria-label="Previous enlarged screenshot">← Previous</button>
+    <span data-viewer-count aria-live="polite" aria-atomic="true"></span>
+    <button type="button" data-viewer-step="1" aria-label="Next enlarged screenshot">Next →</button>
+  </div>
+</dialog>

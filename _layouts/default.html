@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="en">
   {%- include head.html -%}
-  <body>
+  <body{% if page.store_gallery %} class="has-app-galleries"{% endif %}>
     {%- include header.html -%}
     <main id="main" class="site-main">
       {{ content }}
     </main>
     {%- include footer.html -%}
+    {% if page.store_gallery %}
+      {% include screenshot_viewer.html %}
+      <script src="{{ '/assets/js/app-galleries.js' | relative_url }}" defer></script>
+    {% endif %}
   </body>
 </html>

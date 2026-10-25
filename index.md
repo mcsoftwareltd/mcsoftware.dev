@@ -1,5 +1,6 @@
 ---
 layout: default
+store_gallery: true
 title: MC Software ltd — Small studio. Native apps.
 description: Independent iOS studio founded by Matteo Comisso. Makers of EchoAI, Weekwise, and My Vinyl.
 ---

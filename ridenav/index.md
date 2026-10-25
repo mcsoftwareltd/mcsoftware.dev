@@ -1,5 +1,6 @@
 ---
 layout: default
+store_gallery: true
 permalink: /ridenav/
 title: RideNav — Motorcycle navigation built around the ride
 description: Plan twisty motorcycle routes, record every ride, and keep the whole group together with live location sharing. Available on iPhone and Android.

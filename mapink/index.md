@@ -1,5 +1,6 @@
 ---
 layout: default
+store_gallery: true
 permalink: /mapink/
 title: MapInk — Draw and plan on real maps
 description: Mark up Apple Maps on iPad with Pencil notes, pins, distance sketches, saved projects, and drive or walk routes.
@@ -14,6 +15,10 @@ description: Mark up Apple Maps on iPad with Pencil notes, pins, distance sketch
     <p class="product-hero__tagline">Draw and plan on real maps.</p>
     {% include product_downloads.html slug="mapink" %}
   </div>
+</section>
+
+<section class="product-store-previews container" aria-label="App previews">
+  {% include app_screenshots.html slug="mapink" context="product" %}
 </section>
 
 <section class="product-section">

@@ -26,6 +26,8 @@ exclude:
   - vendor
   - node_modules
   - docs/
+  - scripts/
+  - AGENTS.md
   - README.md
   - .bundle
 

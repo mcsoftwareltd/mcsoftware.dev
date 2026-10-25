@@ -14,8 +14,9 @@ Site runs at http://localhost:4000.
 ## Adding a project
 
 1. Add an entry to `_data/projects.yml`.
-2. Drop the app icon and screenshots into `assets/images/<slug>/`.
-3. That's it — the home page picks it up automatically.
+2. Drop the app icon into `assets/images/<slug>/`.
+3. Add genuine store screenshots under `assets/store/<slug>/` and their dimensions, alt text and original URLs to `_data/store_media.json`.
+4. The home page picks up the app and its screenshot shelf automatically. See [the gallery component guide](docs/app-galleries.md) for product-page usage and verification.
 
 ## Editing legal pages
 

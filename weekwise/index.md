@@ -1,5 +1,6 @@
 ---
 layout: default
+store_gallery: true
 permalink: /weekwise/
 title: Weekwise — The week ahead, nothing more
 description: A forward-looking weekly calendar that doubles as a todo list. Syncs with iOS Calendar, surfaces weather, and prepares you for what's next.
@@ -16,6 +17,10 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
   </div>
 </section>
 
+<section class="product-store-previews container" aria-label="App previews">
+  {% include app_screenshots.html slug="weekwise" context="product" %}
+</section>
+
 <section class="product-section">
   <div class="container container--narrow">
     <p class="product-section__label">What it does</p>
@@ -23,20 +28,6 @@ description: A forward-looking weekly calendar that doubles as a todo list. Sync
     <div class="product-section__body">
       <p>Weekwise shows you exactly what's in front of you — the next seven days, today first. No yesterday, no month view, no endless scrolling into the distant future. A calendar designed around the week you're actually living.</p>
       <p>Every day is a single card with your events, your todos, and the weather. Tap any day to add something; it becomes a real calendar event that syncs back to iOS Calendar and anywhere else you read it. Completing a todo crosses it off — and, if you want, marks the underlying event as done.</p>
-    </div>
-    <div class="screenshots">
-      <figure>
-        <img src="{{ '/assets/images/weekwise/screenshot-week.png' | relative_url }}" alt="Weekwise main week view">
-        <figcaption>This week, at a glance</figcaption>
-      </figure>
-      <figure>
-        <img src="{{ '/assets/images/weekwise/screenshot-add.png' | relative_url }}" alt="Weekwise quick add flow">
-        <figcaption>Add something in seconds</figcaption>
-      </figure>
-      <figure>
-        <img src="{{ '/assets/images/weekwise/screenshot-weather.png' | relative_url }}" alt="Weekwise weather detail sheet">
-        <figcaption>Weather, right where you need it</figcaption>
-      </figure>
     </div>
   </div>
 </section>
